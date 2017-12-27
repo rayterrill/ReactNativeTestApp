@@ -15,10 +15,12 @@ export default class AlignItemsBasics extends Component {
     try {
       if (item === 'Evening_Fall_Harp.mp3') {
           await soundObject.loadAsync(require('./assets/music/Evening_Fall_Harp.mp3'));
-	  } else if (item === 'cartoon_whoopee_cushion_air_release_accident.mp3') {
-		  await soundObject.loadAsync(require('./assets/music/cartoon_whoopee_cushion_air_release_accident.mp3'));
-	  } else {
-		  await soundObject.loadAsync(require('./assets/music/cartoon_whoopee_cushion_air_release_accident.mp3'));
+	  } else if (item === 'Stages_of_Grief.mp3') {
+		  await soundObject.loadAsync(require('./assets/music/Stages_of_Grief.mp3'));
+	  } else if (item === 'Windswept.mp3') {
+		  await soundObject.loadAsync(require('./assets/music/Windswept.mp3'));
+	  } else if (item === 'Baby-sleep-music.mp3') {
+		  await soundObject.loadAsync(require('./assets/music/Baby-sleep-music.mp3'));
 	  }
 	  
 	  //stop the sound if something is already playing
@@ -47,26 +49,18 @@ export default class AlignItemsBasics extends Component {
         style={styles.container}>
 		<View style={styles.row}>
           <TouchableHighlight onPress={this._onPressButton.bind(this, 'Evening_Fall_Harp.mp3')} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
+             <Image source={require('./assets/images/harp.png')} />
           </TouchableHighlight>
-          <TouchableHighlight onPress={this._onPressButton.bind(this, 'cartoon_whoopee_cushion_air_release_accident.mp3')} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
-          </TouchableHighlight>
-		</View>
-		<View style={styles.row}>
-          <TouchableHighlight onPress={this._onPressButton.bind(this)} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
-          </TouchableHighlight>
-          <TouchableHighlight onPress={this._onPressButton.bind(this)} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
+          <TouchableHighlight onPress={this._onPressButton.bind(this, 'Stages_of_Grief.mp3')} style={styles.item}>
+             <Image source={require('./assets/images/piano.png')} />
           </TouchableHighlight>
 		</View>
 		<View style={styles.row}>
-          <TouchableHighlight onPress={this._onPressButton.bind(this)} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
+          <TouchableHighlight onPress={this._onPressButton.bind(this, 'Windswept.mp3')} style={styles.item}>
+             <Image source={require('./assets/images/guitar.png')} />
           </TouchableHighlight>
-          <TouchableHighlight onPress={this._onPressButton.bind(this)} style={styles.item}>
-             <Image source={require('./Timbers_Army_crest.png')} />
+          <TouchableHighlight onPress={this._onPressButton.bind(this, 'Baby-sleep-music.mp3')} style={styles.item}>
+             <Image source={require('./assets/images/xylophone.png')} />
           </TouchableHighlight>
 		</View>
       </ImageBackground>
