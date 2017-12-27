@@ -45,7 +45,7 @@ export default class AlignItemsBasics extends Component {
   render() {
     return (
       <ImageBackground
-        source={require('./sunburst.png')}
+        source={require('./assets/images/sunburst.png')}
         style={styles.container}>
 		<View style={styles.row}>
           <TouchableHighlight onPress={this._onPressButton.bind(this, 'Evening_Fall_Harp.mp3')} style={styles.item}>
